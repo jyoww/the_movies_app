@@ -3,8 +3,9 @@ import { CategoryButton } from '../components/CategoryButton';
 import { MovieCard } from '../components/MovieCard';
 import popularImg from '../assets/images/popcorn.png'
 import nowPlayingImg from '../assets/images/seats.jpeg'
+import upcomingImg from  '../assets/images/upcoming.jpg'
 
-const API_KEY = "c275787762fb2904adb52c4ad6412662";
+const API_KEY = "eb4c43d9856aabfc5aa9c18d942c17e7";
 
 export type Category ={
   id: number;
@@ -16,6 +17,7 @@ export type Category ={
 const CATEGORY_LIST = [
 {id: 0, label:'인기영화', url:'/popular', image: popularImg},
 {id: 1, label:'현재 상영작', url:'/now_playing', image: nowPlayingImg},
+{id: 2, label:'상영 예정작', url:'/upcoming', image: upcomingImg},
 ];
 
 export type Movie = {
